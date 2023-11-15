@@ -1,0 +1,125 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#rating-card, #thank-you-card {
+    width: 400px;
+    height: 400px;
+    background-color: var(--dark-blue);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+#rating-card img {
+    width: 50px;
+    height: 50px;
+    background-color: hsla(216, 12%, 54%, 0.2);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#rating-card h1 {
+    color: var(--white);
+    margin-top: 12px;
+}
+
+#rating-card p {
+    color: var(--light-grey)
+}
+
+#rating-card ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 100%;
+}
+
+#rating-card li {
+    width: 50px;
+    height: 50px;
+    background-color: hsla(216, 12%, 54%, 0.2);
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rating-card button {
+    border: none;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+}
+
+.rating-button {
+    background: none;
+    color: var(--light-grey)
+}
+
+#submit-button {
+    background-color: var(--orange);
+    text-transform: uppercase;
+    color: var(--white);
+    height: 3em;
+    border-radius: 25px;
+    letter-spacing: .2em;
+}
+
+#thank-you-card {
+    align-items: center;
+    text-align: center;
+}
+
+#thank-you-card h2 {
+    color: var(--orange);
+    font-weight: 400;
+    padding: 0.5em 1.5em;
+    background-color: hsla(216, 12%, 54%, 0.2);
+    font-size: 1em;
+    border-radius: 2em;
+}
+
+#thank-you-card h1 {
+    color: var(--white);
+}
+
+#thank-you-card p {
+    color: var(--light-grey);
+}
+
+.hidden {
+    visibility: hidden;
+}

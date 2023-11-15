@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <title>Interactive Rating Component</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div id="rating-card">
+                <img src="interactive-rating-component-main\images\icon-star.svg" alt="Star icon" />
+                <h1>How did we do?</h1>
+                <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                <ul>
+                    <li><button type="button" name="rating" class="rating-button">1</button></li>
+                    <li><button type="button" name="rating" class="rating-button">2</button></li>
+                    <li><button type="button" name="rating" class="rating-button">3</button></li>
+                    <li><button type="button" name="rating" class="rating-button">4</button></li>
+                    <li><button type="button" name="rating" class="rating-button">5</button></li>
+                </ul>
+                <button type="button" id="submit-button">Submit</button>
+            </div>
+            <div id="thank-you-card" class="hidden">
+                <img src="interactive-rating-component-main/images/illustration-thank-you.svg" alt="Thank you illustration">
+                <h2>You selected <span id="selected-rating">5</span> out of 5</h2>
+                <h1>Thank you!</h1>
+                <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+            </div>
+        </main>
+    </body>
+</html>
